@@ -17,20 +17,20 @@
     </header>
 
 	<main>
-		<table class = "pina" tabindex="1">
+		<table class = "pina" tabindex="1"> /*La créatio d'une table va être l'élement qui va réagir au clique */
 			<tbody>
 				<trhead>
-					<td class = "pina1">
-						<img src="pinata.png" alt ="Pinata Fortnite">
+					<td class = "pina1"> /*Cette partie va permettre de faire passer l'image vers un display : none et causer sa disparition de l'écra*/
+						<img src="pinata.png" alt ="Pinata Fortnite"> /*C'est la ppremière image, celle de la pinata lorsqu'on arrive sur la page une fois sa cachette dévoilée*/
 					</td>
 				</trhead>
 				<tr>
-					<td class = "pina2">
-					<div class = "z1">
-						<img src="confe.gif"  alt = "Yolooooooooooooooooo">
+					<td class = "pina2"> /*Cette classe permet de transformer le display : none initial vers un display : block, ce qui permet l'apparition*/
+					<div class = "z1"> /*La classe z1 permet d'utiliser un "z-index" que l'on met à 2 pour que l'image se trouve au premier plan*/
+						<img src="confe.gif"  alt = "Yolooooooooooooooooo"> /*Cette balise img est la balise affichant les confeties, au premier plan comparé à la danse pour qu'ils soient visibles*/
 					</div>
-					<div class = "z2">
-						<img src="baslesm.gif" alt = "Yolooooooooooooooooo">
+					<div class = "z2"> /*La classe z2 permet d'utiliser un "z-index" que l'on met à 1 pour que l'image se trouve en arrière plan*/
+						<img src="baslesm.gif" alt = "Yolooooooooooooooooo">  /*Cette balise img est la balise affichant la danse, au dernier plan comparé aux conféties*/
 					</div>
 					</td>
 				</tr>
@@ -39,3 +39,31 @@
 	</main>
 </body>
 </html>
+
+
+/*Code CSS associé à cette page*/
+.pina2 {
+	display :none ; /*Permet de ne pas afficher les conféties et la danse tant que le clique sur la pinata n'a pas été fait */
+}
+
+.pina {
+	position : absolute; /*Définir la position de l'image de pinata sur "absolute" */
+}
+
+.pina:focus .pina2{
+	display : block; /*Après clique, les gif de conféties et de la danse apparaissent*/
+}
+
+.pina:focus .pina1{
+	display : none; /*Après clique, l'image de pinata disparait*/
+}
+
+.z1 {
+	z-index : 2; /*Définir le gif coféties au premier plan*/
+	position : fixed; /*Fixer la position du gif pour éviter les problèmes*/ 
+}
+
+.z2 {
+	z-index : 1 ;/*Définir le gif danse au second plan*/
+	position : fixed; /*Fixer la position du gif pour éviter les problèmes */
+}
