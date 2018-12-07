@@ -1,0 +1,25 @@
+.pina2 {
+	display :none ;
+}
+
+.pina {
+	position : absolute;
+}
+
+.pina:focus .pina2{
+	display : block;
+}
+
+.pina:focus .pina1{
+	display : none;
+}
+
+.z1 {
+	z-index : 2;
+	position : fixed;
+}
+
+.z2 {
+	z-index : 1;
+	position : fixed;
+}
