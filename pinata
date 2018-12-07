@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nuit de l'info</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header>
+        <nav>
+            <div><a href="./TableauBord.html">Tableau de Bord</a></div>
+            <div><a href="./ChekList.html">Check-liste</a></div>
+            <div><a href="./sante.html">Santé</a></div>
+        </nav>
+        <P style="text-align:center"><img class="logorect" src="./logorect.png"></P>
+    </header>
+
+	<main>
+		<table class = "pina" tabindex="1">
+			<tbody>
+				<trhead>
+					<td class = "pina1">
+						<img src="pinata.png" alt ="Pinata Fortnite">
+					</td>
+				</trhead>
+				<tr>
+					<td class = "pina2">
+					<div class = "z1">
+						<img src="confe.gif"  alt = "Yolooooooooooooooooo">
+					</div>
+					<div class = "z2">
+						<img src="baslesm.gif" alt = "Yolooooooooooooooooo">
+					</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+</body>
+</html>
